@@ -22,6 +22,16 @@ body {
   color: var(--text-primary);
   overflow-x: hidden;
   cursor: none;
+  /* Performance optimizations */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Enable hardware acceleration for smooth scrolling */
+* {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  will-change: auto;
 }
 
 /* Custom Cursor */
@@ -85,14 +95,18 @@ html {
 .glass-card {
   background: var(--glass-bg);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border: 1px solid var(--glass-border);
   border-radius: 20px;
   padding: 2rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Performance optimization */
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 .glass-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-10px) translateZ(0);
   box-shadow: 0 20px 60px rgba(0, 212, 255, 0.3);
 }
 

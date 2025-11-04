@@ -33,11 +33,13 @@
   margin-top: 2rem;
   padding: 1.5rem 2rem;
   background: var(--glass-bg);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border: 1px solid var(--glass-border);
   border-radius: 15px;
   max-width: 700px;
   animation: glow 3s ease-in-out infinite;
+  will-change: box-shadow;
 }
 
 /* Skills Section */
