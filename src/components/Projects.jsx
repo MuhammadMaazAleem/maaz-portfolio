@@ -93,29 +93,32 @@ function ProjectCard({ project, index }) {
           ))}
         </div>
 
-        <motion.a
-          href={project.githubUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            marginTop: '1rem',
-            padding: '0.7rem 1.5rem',
-            background: 'linear-gradient(135deg, var(--neon-blue), var(--neon-purple))',
-            border: 'none',
-            borderRadius: '25px',
-            color: 'white',
-            fontWeight: '600',
-            cursor: 'pointer',
-            width: '100%',
-            display: 'block',
-            textAlign: 'center',
-            textDecoration: 'none',
-          }}
+        <motion.div
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
+          style={{ marginTop: '1rem' }}
         >
-          View on GitHub →
-        </motion.a>
+          <a
+            href={project.githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              padding: '0.7rem 1.5rem',
+              background: 'linear-gradient(135deg, var(--neon-blue), var(--neon-purple))',
+              border: 'none',
+              borderRadius: '25px',
+              color: 'white',
+              fontWeight: '600',
+              cursor: 'pointer',
+              width: '100%',
+              display: 'block',
+              textAlign: 'center',
+              textDecoration: 'none',
+            }}
+          >
+            View on GitHub →
+          </a>
+        </motion.div>
       </div>
     </motion.div>
   );
