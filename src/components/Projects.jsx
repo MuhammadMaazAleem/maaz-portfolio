@@ -93,7 +93,10 @@ function ProjectCard({ project, index }) {
           ))}
         </div>
 
-        <motion.button
+        <motion.a
+          href={project.githubUrl}
+          target="_blank"
+          rel="noopener noreferrer"
           style={{
             marginTop: '1rem',
             padding: '0.7rem 1.5rem',
@@ -104,13 +107,15 @@ function ProjectCard({ project, index }) {
             fontWeight: '600',
             cursor: 'pointer',
             width: '100%',
+            display: 'block',
+            textAlign: 'center',
+            textDecoration: 'none',
           }}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          onClick={() => window.open(project.githubUrl, '_blank')}
         >
           View on GitHub →
-        </motion.button>
+        </motion.a>
       </div>
     </motion.div>
   );
