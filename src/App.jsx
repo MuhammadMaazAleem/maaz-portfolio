@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import About from './components/About';
+import Resume from './components/Resume';
 import Contact from './components/Contact';
 import Background3D from './components/Background3D';
 import CustomCursor from './components/CustomCursor';
@@ -38,6 +39,7 @@ function App() {
         <Skills />
         <Projects />
         <About />
+        <Resume />
         <Contact />
       </div>
     </>
