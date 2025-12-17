@@ -68,7 +68,7 @@ function Resume() {
               </div>
               <div className="resume-item">
                 <span className="icon">💼</span>
-                <span>6 Months Experience</span>
+                <span>1.5 Years Experience</span>
               </div>
               <div className="resume-item">
                 <span className="icon">💻</span>

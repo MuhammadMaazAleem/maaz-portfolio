@@ -1,6 +1,8 @@
 .app-content {
   position: relative;
   z-index: 1;
+  /* Performance optimization */
+  contain: layout style paint;
 }
 
 /* Navigation Styles */
@@ -12,6 +14,8 @@
   z-index: 1000;
   padding: 1.2rem 0;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: padding, background;
+  contain: layout style paint;
 }
 
 .navigation.scrolled {

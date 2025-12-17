@@ -47,7 +47,7 @@ function Hero() {
             position: 'relative',
           }}>
             <img 
-              src="https://avatars.githubusercontent.com/u/191116040?v=4" 
+              src="/profile.jpg" 
               alt="Muhammad Maaz Aleem"
               style={{
                 width: '100%',

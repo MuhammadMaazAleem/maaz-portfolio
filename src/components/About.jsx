@@ -14,9 +14,9 @@ const timelineData = [
     description: 'Currently pursuing BSCS degree with focus on software development and emerging technologies.',
   },
   {
-    year: '2024',
-    title: 'Started Development Journey',
-    description: 'Gained 6 months of hands-on experience in full-stack development, working on various projects.',
+    year: '2023 - Present',
+    title: 'Full-Stack Development Journey',
+    description: 'Gained 1.5 years of hands-on experience in full-stack development, working on diverse projects and delivering professional solutions.',
   },
 ];
 
@@ -58,7 +58,7 @@ function About() {
               boxShadow: '0 10px 30px rgba(184, 71, 255, 0.4)',
             }}>
               <img 
-                src="https://avatars.githubusercontent.com/u/191116040?v=4" 
+                src="/profile.jpg" 
                 alt="Muhammad Maaz Aleem"
                 style={{
                   width: '100%',
@@ -71,7 +71,7 @@ function About() {
             <p style={{ marginBottom: '1.5rem' }}>
               Hey there! 👋 I'm <span className="highlight">Muhammad Maaz Aleem</span>, a passionate 
               Full-Stack Developer and <span className="highlight">BSCS undergraduate student</span>. 
-              With 6 months of hands-on experience, I love turning ideas into elegant, functional applications 
+              With 1.5 years of hands-on experience, I love turning ideas into elegant, functional applications 
               and creating seamless digital experiences.
             </p>
 
@@ -98,7 +98,7 @@ function About() {
 
             <p style={{ marginTop: '1.5rem' }}>
               Currently pursuing my <span className="highlight">Bachelor's degree in Computer Science</span>, 
-              I'm constantly learning and applying new technologies. My 6 months of development experience 
+              I'm constantly learning and applying new technologies. My 1.5 years of development experience 
               has taught me the importance of <span className="highlight">clean, maintainable code</span> and 
               following industry best practices. I'm excited to continue growing as a developer and 
               contributing to innovative projects.
@@ -135,7 +135,7 @@ function About() {
                 fontSize: '0.95rem',
                 fontWeight: '600',
               }}>
-                💻 6 Months Experience
+                💻 1.5 Years Experience
               </div>
             </div>
           </motion.div>
